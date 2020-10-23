@@ -1,0 +1,20 @@
+﻿
+
+<h1>Menu</h1>
+<h3>@Model.CurrentCategory</h3>
+
+<div class="row mt-5 mb-2">
+    @{
+        foreach (var dish in Model.AllDishes)
+        {
+            <div class="col-lg-4">
+                <img class="img-thumbnail" src="@dish.Img" alt="@dish.Name" />
+                <h2>@dish.Name</h2>
+                <p>@dish.Description</p>
+                <p>@dish.Price.ToString("c")</p>
+            </div>
+        }
+    }
+</div>
+
+

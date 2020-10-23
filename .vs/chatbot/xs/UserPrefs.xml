@@ -1,0 +1,51 @@
+﻿<Properties StartupConfiguration="{A2123848-E7B8-4D2D-910F-E97E41BD7E72}|Default">
+  <MonoDevelop.Ide.ItemProperties.chatbot PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="chatbot/Mocks/MockDish.cs">
+    <Files>
+      <File FileName="chatbot/Program.cs" Line="1" Column="1" />
+      <File FileName="chatbot/Views/Home/List.cshtml" />
+      <File FileName="chatbot/Views/Shared/_Layout.cshtml" />
+      <File FileName="chatbot/Views/_ViewStart.cshtml" />
+      <File FileName="chatbot/ViewModels/DishListViewModel.cs" />
+      <File FileName="chatbot/Views/Shared/_ValidationScriptsPartial.cshtml" />
+      <File FileName="chatbot/Views/Shared/Error.cshtml" />
+      <File FileName="chatbot/Views/Home/Index.cshtml" />
+      <File FileName="chatbot/Views/_ViewImports.cshtml" />
+      <File FileName="chatbot/wwwroot/css/site.css" />
+      <File FileName="chatbot/Mocks/MockDish.cs" Line="17" Column="205" />
+      <File FileName="chatbot/Views/Home/Privacy.cshtml" />
+      <File FileName="chatbot/wwwroot/js/site.js" />
+      <File FileName="chatbot/appsettings.Development.json" />
+      <File FileName="chatbot/Startup.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="chatbot" expanded="True">
+            <Node name="chatbot" expanded="True">
+              <Node name="Mocks" expanded="True">
+                <Node name="MockDish.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="img" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
