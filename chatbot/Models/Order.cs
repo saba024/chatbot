@@ -3,16 +3,13 @@ namespace chatbot.Models
 {
     public class Order
     { 
-        public int OrderId { get; set; }
-        public string User { get; set; } // имя фамилия покупателя
-        public string Address { get; set; } // адрес покупателя
-        public string ContactPhone { get; set; } // контактный телефон покупателя
+        public int Id { get; set; }
+        public string User { get; set; }
+        public string Address { get; set; } 
+        public string ContactPhone { get; set; } 
 
-        public int DishId { get; set; } // ссылка на связанную модель Dish
+        public string DishId { get; set; } 
         public Dish Dish { get; set; }
 
-        public Order()
-        {
-        }
     }
 }

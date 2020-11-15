@@ -15,7 +15,16 @@ namespace chatbot.Mocks
             {
                 return new List<Dish>
                 {
-                    new Dish{Name = "Континентальный завтрак", Description="Колбаса гриль из курицы ,яйцо куриное, картофельные котлетки Хашбраун, фасоль красная консерв., томаты бланшированные", Img = "/img/kontinent.jpg", Price=8.10, IsFavourite = true, IsAvailable=true, Category=_dishCategory.GetCategories.First()}
+                    new Dish
+                    {
+                        Name = "Континентальный завтрак",
+                        Description="Колбаса гриль из курицы ,яйцо куриное, картофельные котлетки Хашбраун, фасоль красная консерв., томаты бланшированные",
+                        Img = "/img/kontinent.jpg",
+                        Price=8.10,
+                        IsFavourite = true,
+                        IsAvailable=true,
+                        Category=_dishCategory.GetCategories.First()
+                    }
                 };
             }
         }

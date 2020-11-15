@@ -8,6 +8,8 @@ using Microsoft.Extensions.Logging;
 using chatbot.Models;
 using chatbot.Interfaces;
 using chatbot.ViewModels;
+using System.Collections.ObjectModel;
+
 
 namespace chatbot.Controllers
 {
@@ -16,6 +18,7 @@ namespace chatbot.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly IGetDish _getDish;
         private readonly IDishCategory _dishCategory;
+        
 
         public HomeController(ILogger<HomeController> logger, IDishCategory dishCategory, IGetDish getDish)
         {
@@ -29,12 +32,24 @@ namespace chatbot.Controllers
             return View();
         }
 
+        public IActionResult Chat()
+        {
+            return View();
+        }
+
         public IActionResult List()
         {
             DishListViewModel obj = new DishListViewModel();
             obj.AllDishes = _getDish.GetDishes;
             obj.CurrentCategory = "Breakfast";
             return View(obj);
+        }
+
+        [HttpPost("home/list")]
+        public IActionResult Add([FromForm] string email)
+        {
+            EmailClass.recepients = email;
+            return RedirectToAction("Index");
         }
 
         public IActionResult Privacy()

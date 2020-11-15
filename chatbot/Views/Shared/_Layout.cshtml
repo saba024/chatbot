@@ -110,6 +110,13 @@
         </div>
         </div>
         <footer class="border-top footer text-muted">
+            <form asp-controller="Home" asp-action="Add" method="POST">
+                <div>
+                    <label>Email</label>
+                    <input type="text" name="email" />
+                </div>
+                <input type="submit" value="Subscribe">
+            </form>
             <div class="container">
                 &copy; 2020 - chatbot - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
             </div>
