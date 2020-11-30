@@ -1,0 +1,16 @@
+﻿@{ Layout = "MenuLayout";}
+
+<h1>Menu</h1>
+<h3>@Model.CurrentCategory</h3>
+
+<div class="row mt-5 mb-2">
+    @{
+        foreach (Dish dish in Model.AllDishes)
+        {
+            @Html.Partial("AllDish", dish)
+        }
+    }
+
+
+</div>
+

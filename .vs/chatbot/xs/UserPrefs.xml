@@ -1,0 +1,65 @@
+﻿<Properties StartupConfiguration="{70A13A3E-5F1A-41AE-B909-AD43D42C1F5D}|Default">
+  <MonoDevelop.Ide.ItemProperties.chatbot PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Shared/MenuLayout.cshtml">
+    <Files>
+      <File FileName="Models/Order.cs" Line="1" Column="1" IsPinned="True" />
+      <File FileName="Mocks/MockCategory.cs" />
+      <File FileName="Mocks/MockDish.cs" />
+      <File FileName="Mocks/MockTelegramUser.cs" />
+      <File FileName="Properties/launchSettings.json" />
+      <File FileName="Hubs/MessageHub.cs" />
+      <File FileName="Views/Home/Chat.cshtml" />
+      <File FileName="wwwroot/lib/signalr.js" />
+      <File FileName="wwwroot/js/message.js" />
+      <File FileName="Views/Home/Index.cshtml" />
+      <File FileName="ViewModels/DashboardViewModel.cs" />
+      <File FileName="Controllers/HomeController.cs" />
+      <File FileName="Controllers/DishController.cs" />
+      <File FileName="Views/Shared/_Layout2.cshtml" />
+      <File FileName="Views/Shared/_Layout.cshtml" />
+      <File FileName="wwwroot/lib/morris.js/morris.js" />
+      <File FileName="wwwroot/lib/morris.js/morris.min.js" />
+      <File FileName="Views/Dish/Index.cshtml" />
+      <File FileName="Views/Dish/Create.cshtml" />
+      <File FileName="Startup.cs" />
+      <File FileName="package.json" />
+      <File FileName="package-lock.json" />
+      <File FileName="Controllers/AnnouncmentController.cs" />
+      <File FileName="Areas/Identity/Pages/_ViewStart.cshtml" />
+      <File FileName="Views/Shared/_LoginPartial.cshtml" />
+      <File FileName="appsettings.json" />
+      <File FileName="appsettings.Development.json" />
+      <File FileName="SeedData.cs" />
+      <File FileName="Program.cs" />
+      <File FileName="Data/DBObjects.cs" />
+      <File FileName="ServiceCollectionExtensions.cs" />
+      <File FileName="Controllers/MenuController.cs" />
+      <File FileName="Views/Shared/MenuLayout.cshtml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="chatbot" expanded="True">
+            <Node name="chatbot" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Shared" expanded="True">
+                  <Node name="MenuLayout.cshtml" selected="True" />
+                </Node>
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Debugger.DebugSourceFolders />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

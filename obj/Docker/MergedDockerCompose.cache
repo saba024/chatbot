@@ -1,0 +1,16 @@
+services:
+  chatbot:
+    build:
+      context: /Users/sabanaskidashvili/Projects/chatbot
+      dockerfile: ./Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: chatbot
+    ports:
+    - target: 80
+    - target: 443
+    volumes:
+    - /Users/sabanaskidashvili/.aspnet/https:/root/.aspnet/https:ro
+    - /Users/sabanaskidashvili/.microsoft/usersecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'
