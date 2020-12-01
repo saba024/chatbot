@@ -3,7 +3,6 @@
 /Users/sabanaskidashvili/Projects/chatbot/bin/Release/net5.0/package-lock.json
 /Users/sabanaskidashvili/Projects/chatbot/bin/Release/net5.0/package.json
 /Users/sabanaskidashvili/Projects/chatbot/bin/Release/net5.0/chatbot.StaticWebAssets.xml
-/Users/sabanaskidashvili/Projects/chatbot/bin/Release/net5.0/app.db
 /Users/sabanaskidashvili/Projects/chatbot/bin/Release/net5.0/chatbot.deps.json
 /Users/sabanaskidashvili/Projects/chatbot/bin/Release/net5.0/chatbot.runtimeconfig.json
 /Users/sabanaskidashvili/Projects/chatbot/bin/Release/net5.0/chatbot.runtimeconfig.dev.json

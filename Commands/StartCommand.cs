@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Threading.Tasks;
+using chatbot.Data;
 using chatbot.Interfaces;
+using chatbot.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.DependencyInjection;
 using Telegram.Bot;
 using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
@@ -10,7 +14,10 @@ namespace chatbot.Commands
 {
     public class StartCommand : TelegramCommand
     {
+
         public override string Name => @"/start";
+        public readonly ApplicationDbContext _db;
+        private readonly UserManager<User> _userManager;
 
         public override bool Contains(Message message)
         {
@@ -24,7 +31,11 @@ namespace chatbot.Commands
 
         public override async Task Execute(Message message, ITelegramBotClient client)
         {
+            
             var chatId = message.Chat.Id;
+            var nm = message.Chat.FirstName;
+            IdentityUser user = new IdentityUser { UserName = nm };
+            _db.Users.Add(user);
 
             var keyboard = new ReplyKeyboardMarkup
             {
