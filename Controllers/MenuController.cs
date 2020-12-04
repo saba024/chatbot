@@ -30,6 +30,7 @@ namespace chatbot.Controllers
         {
             string _category = category;
             IEnumerable<Dish> dishes;
+            
             string currCategory = "";
             if (string.IsNullOrEmpty(category))
             {

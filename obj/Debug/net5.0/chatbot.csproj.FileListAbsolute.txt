@@ -104,7 +104,6 @@
 /Users/sabanaskidashvili/Projects/chatbot/obj/Debug/net5.0/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
 /Users/sabanaskidashvili/Projects/chatbot/obj/Debug/net5.0/Razor/Views/_ViewStart.cshtml.g.cs
 /Users/sabanaskidashvili/Projects/chatbot/obj/Debug/net5.0/Razor/Views/Announcment/Index.cshtml.g.cs
-/Users/sabanaskidashvili/Projects/chatbot/obj/Debug/net5.0/Razor/Views/Home/Chat.cshtml.g.cs
 /Users/sabanaskidashvili/Projects/chatbot/obj/Debug/net5.0/Razor/Views/Shared/AllDish.cshtml.g.cs
 /Users/sabanaskidashvili/Projects/chatbot/obj/Debug/net5.0/Razor/Views/Shared/MenuLayout.cshtml.g.cs
 /Users/sabanaskidashvili/Projects/chatbot/obj/Debug/net5.0/Razor/Views/ShopCart/Cart.cshtml.g.cs
@@ -119,3 +118,6 @@
 /Users/sabanaskidashvili/Projects/chatbot/obj/Debug/net5.0/Razor/Views/Dish/Index.cshtml.g.cs
 /Users/sabanaskidashvili/Projects/chatbot/obj/Debug/net5.0/Razor/Views/Dish/Update.cshtml.g.cs
 /Users/sabanaskidashvili/Projects/chatbot/obj/Debug/net5.0/Razor/Views/Menu/List.cshtml.g.cs
+/Users/sabanaskidashvili/Projects/chatbot/obj/Debug/net5.0/Razor/Views/Chat/Index.cshtml.g.cs
+/Users/sabanaskidashvili/Projects/chatbot/obj/Debug/net5.0/Razor/Views/Role/Index.cshtml.g.cs
+/Users/sabanaskidashvili/Projects/chatbot/obj/Debug/net5.0/Razor/Views/Role/Update.cshtml.g.cs

@@ -39,12 +39,14 @@ namespace chatbot.Controllers
             dashboardViewModel.dish_count = _db.Dishes.Count();
             dashboardViewModel.category_count = _db.Categories.Count();
             dashboardViewModel.users_count = _db1.Users.Count();
+            _logger.LogInformation("Getting all dish");
             return View(dashboardViewModel);
         }
 
         [Authorize(Roles = RoleNames.Administrator)]
         public IActionResult Chat()
         {
+            
             return View();
         }
 
@@ -53,6 +55,7 @@ namespace chatbot.Controllers
         public IActionResult Add([FromForm] string email)
         {
             EmailClass.recepients = email;
+            _logger.LogInformation("Subscribe by email");
             return RedirectToAction("Index");
         }
 

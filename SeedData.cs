@@ -37,6 +37,8 @@ namespace chatbot
                 await userMgr.AddToRoleAsync(adminUser, RoleNames.Administrator);
                 await userMgr.AddToRoleAsync(commonUser, RoleNames.User);
             }
+
+            
         }
     }
 

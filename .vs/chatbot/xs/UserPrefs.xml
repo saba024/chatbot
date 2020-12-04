@@ -1,48 +1,62 @@
 ﻿<Properties StartupConfiguration="{70A13A3E-5F1A-41AE-B909-AD43D42C1F5D}|Default">
   <MonoDevelop.Ide.ItemProperties.chatbot PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Models/TelegramUser.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Services/CommandService.cs">
     <Files>
-      <File FileName="Models/Order.cs" Line="1" Column="1" IsPinned="True" />
-      <File FileName="Mocks/MockCategory.cs" />
-      <File FileName="Mocks/MockDish.cs" />
-      <File FileName="Mocks/MockTelegramUser.cs" />
-      <File FileName="Properties/launchSettings.json" />
-      <File FileName="Hubs/MessageHub.cs" />
-      <File FileName="Views/Home/Chat.cshtml" Line="31" Column="24" />
-      <File FileName="wwwroot/lib/signalr.js" />
-      <File FileName="wwwroot/js/message.js" />
-      <File FileName="Views/Home/Index.cshtml" />
-      <File FileName="ViewModels/DashboardViewModel.cs" Line="1" Column="1" />
-      <File FileName="Controllers/HomeController.cs" Line="38" Column="38" />
-      <File FileName="Controllers/DishController.cs" Line="14" Column="42" />
-      <File FileName="Views/Shared/_Layout2.cshtml" />
-      <File FileName="Views/Shared/_Layout.cshtml" />
-      <File FileName="wwwroot/lib/morris.js/morris.js" />
-      <File FileName="wwwroot/lib/morris.js/morris.min.js" />
-      <File FileName="Views/Dish/Index.cshtml" Line="1" Column="1" />
-      <File FileName="Views/Dish/Create.cshtml" Line="12" Column="38" />
-      <File FileName="Startup.cs" Line="122" Column="1" />
-      <File FileName="package.json" />
-      <File FileName="package-lock.json" />
-      <File FileName="Controllers/AnnouncmentController.cs" Line="44" Column="12" />
-      <File FileName="Areas/Identity/Pages/_ViewStart.cshtml" />
-      <File FileName="Views/Shared/_LoginPartial.cshtml" />
-      <File FileName="appsettings.json" Line="14" Column="58" />
-      <File FileName="appsettings.Development.json" />
-      <File FileName="SeedData.cs" Line="60" Column="49" />
-      <File FileName="Program.cs" Line="20" Column="60" />
-      <File FileName="Data/DBObjects.cs" Line="15" Column="1" />
-      <File FileName="ServiceCollectionExtensions.cs" Line="15" Column="52" />
-      <File FileName="Controllers/MenuController.cs" Line="1" Column="1" />
+      <File FileName="Controllers/ChatController.cs" Line="32" Column="12" />
+      <File FileName="Controllers/BotController.cs" />
+      <File FileName="Commands/BeginCommand.cs" />
+      <File FileName="Commands/StartCommand.cs" />
+      <File FileName="Models/EmailClass.cs" />
+      <File FileName="Models/TelegramUser.cs" />
+      <File FileName="Startup.cs" />
+      <File FileName="appsettings.json" Line="4" Column="7" />
+      <File FileName="Data/DBObjects.cs" />
+      <File FileName="Controllers/HomeController.cs" />
+      <File FileName="Controllers/AnnouncmentController.cs" />
+      <File FileName="Controllers/MenuController.cs" />
+      <File FileName="Views/Shared/_Layout.cshtml" Line="68" Column="26" />
+      <File FileName="Views/Shared/_Layout2.cshtml" Line="1" Column="1" />
       <File FileName="Views/Shared/MenuLayout.cshtml" />
-      <File FileName="Data/DishContext.cs" Line="1" Column="1" />
-      <File FileName="Models/Category.cs" Line="1" Column="1" />
-      <File FileName="Controllers/ChatController.cs" Line="12" Column="9" />
-      <File FileName="Controllers/BotController.cs" Line="21" Column="50" />
-      <File FileName="Commands/BeginCommand.cs" Line="1" Column="1" />
-      <File FileName="Commands/StartCommand.cs" Line="34" Column="54" />
-      <File FileName="Models/EmailClass.cs" Line="9" Column="35" />
-      <File FileName="Models/TelegramUser.cs" Line="13" Column="67" />
+      <File FileName="Views/Announcment/Index.cshtml" />
+      <File FileName="Controllers/DishController.cs" />
+      <File FileName="Interfaces/TelegramCommand.cs" />
+      <File FileName="Interfaces/ICommandService.cs" />
+      <File FileName="Services/CommandService.cs" Line="14" Column="17" />
+      <File FileName="Commands/AboutCommand.cs" />
+      <File FileName="Models/ErrorViewModel.cs" />
+      <File FileName="Commands/ReviewCommand.cs" />
+      <File FileName="Data/ApplicationDbContext.cs" />
+      <File FileName="Data/DishContext.cs" />
+      <File FileName="Models/Category.cs" />
+      <File FileName="Models/Order.cs" />
+      <File FileName="Models/Dish.cs" />
+      <File FileName="Views/Dish/Index.cshtml" />
+      <File FileName="Views/Home/Index.cshtml" />
+      <File FileName="ServiceCollectionExtensions.cs" />
+      <File FileName="Properties/launchSettings.json" />
+      <File FileName="appsettings.Development.json" />
+      <File FileName="Repositories/DishRepository.cs" />
+      <File FileName="Repositories/CategoryRepository.cs" />
+      <File FileName="Interfaces/ITelegramUser.cs" />
+      <File FileName="Interfaces/IDishCategory.cs" />
+      <File FileName="Interfaces/IGetDish.cs" />
+      <File FileName="Areas/Identity/Pages/_ViewStart.cshtml" />
+      <File FileName="Views/_ViewImports.cshtml" />
+      <File FileName="SeedData.cs" />
+      <File FileName="Controllers/RoleController.cs" />
+      <File FileName="Views/Role/Index.cshtml" />
+      <File FileName="Views/Chat/Index.cshtml" />
+      <File FileName="Views/_ViewStart.cshtml" />
+      <File FileName="Models/RoleEdit.cs" />
+      <File FileName="Models/Feedback.cs" />
+      <File FileName="Models/RoleModification.cs" />
+      <File FileName="Views/Role/Update.cshtml" />
+      <File FileName="package.json" />
+      <File FileName="TagHelper/RoleUsersTH.cs" />
+      <File FileName="logs/FileLogger.cs" />
+      <File FileName="logs/FileLoggerExtensions.cs" />
+      <File FileName="logs/FileLoggerProvider.cs" />
+      <File FileName="AllLog.txt" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -50,9 +64,15 @@
           <Node name="chatbot" expanded="True">
             <Node name="chatbot" expanded="True">
               <Node name="Commands" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="TelegramUser.cs" selected="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="CommandService.cs" selected="True" />
               </Node>
+              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -60,7 +80,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <Debugger.DebugSourceFolders />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

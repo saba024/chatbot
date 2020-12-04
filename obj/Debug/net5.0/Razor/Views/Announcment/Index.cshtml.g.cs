@@ -26,8 +26,15 @@ using chatbot.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "/Users/sabanaskidashvili/Projects/chatbot/Views/_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7d6e64bc4cd98558f928e225e66ef0644848e4a1", @"/Views/Announcment/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"57c5823347231e04fd7d10b313891946f52844e5", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"742de54b4a4c31dd3a6400d58f1540bcee10f1a6", @"/Views/_ViewImports.cshtml")]
     public class Views_Announcment_Index : global::Microsoft.AspNetCore.Mvc.RazorPages.Page
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Announcment", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -60,9 +67,9 @@ using chatbot.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("\n<html>\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7d6e64bc4cd98558f928e225e66ef0644848e4a14189", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7d6e64bc4cd98558f928e225e66ef0644848e4a14368", async() => {
                 WriteLiteral("\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7d6e64bc4cd98558f928e225e66ef0644848e4a14447", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7d6e64bc4cd98558f928e225e66ef0644848e4a14626", async() => {
                     WriteLiteral("\n        <div>\n            <label>Text Body</label>\n            <input type=\"text\" name=\"body\" />\n        </div>\n        <textarea name=\"message\"></textarea>\n        <input type=\"submit\" value=\"Send\">\n    ");
                 }
                 );

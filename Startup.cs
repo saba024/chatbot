@@ -19,6 +19,9 @@ using Newtonsoft.Json.Serialization;
 using FluentValidation.AspNetCore;
 using chatbot.Hubs;
 using chatbot.Repositories;
+using Microsoft.Extensions.Logging;
+using System.IO;
+using chatbot.logs;
 
 namespace chatbot
 {
@@ -37,6 +40,7 @@ namespace chatbot
             string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<DishContext>(options => options.UseSqlServer(connection));
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connection));
+            
             services.AddDatabaseDeveloperPageExceptionFilter();
 
             services.AddDefaultIdentity<IdentityUser>(opt =>
@@ -52,6 +56,7 @@ namespace chatbot
             services.AddControllersWithViews();
             services.AddTransient<IGetDish, DishRepository>();
             services.AddTransient<IDishCategory, CategoryRepository>();
+
             services
                .AddScoped<ICommandService, CommandService>()
                //.AddScoped<IDbRepository, DbRepository>()
@@ -70,7 +75,7 @@ namespace chatbot
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         [Obsolete]
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
@@ -116,11 +121,17 @@ namespace chatbot
                 endpoints.MapRazorPages();
             });
 
-            using(var scope = app.ApplicationServices.CreateScope())
+            loggerFactory.AddFile(Path.Combine(Directory.GetCurrentDirectory(), Configuration.GetSection("AllLog").Value),
+                Path.Combine(Directory.GetCurrentDirectory(), Configuration.GetSection("ErrorLog").Value));
+            var logger = loggerFactory.CreateLogger("FileLogger");
+
+            using (var scope = app.ApplicationServices.CreateScope())
             {
                 DishContext context = scope.ServiceProvider.GetRequiredService<DishContext>();
                 DBObjects.Initial(context);
             }
+
+
         }
     }
 }

@@ -38,6 +38,10 @@
     <Folder Include="Views\Menu\" />
     <Folder Include="Views\ShopCart\" />
     <Folder Include="Views\Dish\" />
+    <Folder Include="Views\Chat\" />
+    <Folder Include="Views\Role\" />
+    <Folder Include="TagHelper\" />
+    <Folder Include="logs\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Views\Home\Privacy.cshtml" />

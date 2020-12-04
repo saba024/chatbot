@@ -34,8 +34,7 @@ namespace chatbot.Commands
             
             var chatId = message.Chat.Id;
             var nm = message.Chat.FirstName;
-            IdentityUser user = new IdentityUser { UserName = nm };
-            _db.Users.Add(user);
+           
 
             var keyboard = new ReplyKeyboardMarkup
             {

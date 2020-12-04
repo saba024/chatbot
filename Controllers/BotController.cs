@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using chatbot.Data;
 using chatbot.Hubs;
 using chatbot.Interfaces;
 using chatbot.Models;
@@ -9,6 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
 using Telegram.Bot;
 using Telegram.Bot.Types;
+using Microsoft.EntityFrameworkCore;
 
 namespace chatbot.Controllers
 {
@@ -20,12 +23,14 @@ namespace chatbot.Controllers
         private readonly ICommandService _commandService;
         ObservableCollection<TelegramUser> Users;
         private IHubContext<MessageHub> _hubcontext;
+        
 
         public BotController(ICommandService commandService, ITelegramBotClient telegramBotClient, IHubContext<MessageHub> hubcontext)
         {
             _commandService = commandService;
             _telegramBotClient = telegramBotClient;
             _hubcontext = hubcontext;
+            
         }
 
         [HttpGet]
@@ -42,14 +47,16 @@ namespace chatbot.Controllers
 
             var message = update.Message;
 
-            foreach (var command in _commandService.Get())
+            foreach (var comm in _commandService.Get())
             {
-                if (command.Contains(message))
+                if (comm.Contains(message))
                 {
-                    await command.Execute(message, _telegramBotClient);
+                    await comm.Execute(message, _telegramBotClient);
                     break;
                 }
             }
+
+             
 
             Users = new ObservableCollection<TelegramUser>();
 
@@ -62,6 +69,7 @@ namespace chatbot.Controllers
                 var person = new TelegramUser(e.Message.Chat.FirstName, e.Message.Chat.Id);
                 if (!Users.Contains(person)) Users.Add(person);
                 Users[Users.IndexOf(person)].AddMessage($"{person.Nick}:{e.Message.Text}");
+                Console.WriteLine(Users[1]);
                 _telegramBotClient.StartReceiving();
 
             };
