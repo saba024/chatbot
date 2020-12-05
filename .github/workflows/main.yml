@@ -29,4 +29,4 @@ jobs:
         app-name: 'chatbotcontrpanel'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_0d038a824d824cad8d77604a360f91b6 }}
-        package: ${{env.DOTNET_ROOT}}/myapp 
+        package: ${{env.DOTNET_ROOT}}/myapp
