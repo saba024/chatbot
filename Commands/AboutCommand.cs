@@ -10,7 +10,7 @@ namespace chatbot.Commands
 {
     public class AboutCommand : TelegramCommand
     {
-        public override string Name { get; } = "Оставить отзыв";
+        public override string Name { get; } = "График работы";
 
         public override bool Contains(Message message)
         {
