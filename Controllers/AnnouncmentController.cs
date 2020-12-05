@@ -33,15 +33,7 @@ namespace chatbot.Controllers
             return View();
         }
 
-        /*[HttpPost("/announcment")]
-        public async Task<IActionResult> Post([FromForm] string message)
-        {
-            int chatid = 310145490;
-            await _telegramBotClient.SendTextMessageAsync(chatid, message);
-            await _hubcontext.Clients.All.SendAsync("ReceiveMessage", message);
-            
-            return RedirectToAction("Index");
-        }*/
+       
 
         [HttpPost("/announcment")]
         public IActionResult Post([FromForm] string body, string message)
@@ -65,9 +57,11 @@ namespace chatbot.Controllers
 
             };
 
+           
+
             using (var client = new SmtpClient())
             {
-                client.Connect("smtp.gmail.com", 587, false);
+                client.Connect("smtp.gmail.com", 25, false);
 
                 client.Authenticate("naskidashvilisaba370@gmail.com", "madrid2016");
 

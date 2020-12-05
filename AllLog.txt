@@ -24,3 +24,30 @@ Hosting environment: Development
 Content root path: /Users/sabanaskidashvili/Projects/chatbot
 Getting all dish
 Getting all dish
+User validation failed: DuplicateUserName;DuplicateEmail.
+User validation failed: DuplicateUserName;DuplicateEmail.
+Now listening on: https://localhost:5001
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: /Users/sabanaskidashvili/Projects/chatbot
+Getting all dish
+Getting all dish
+Getting all dish
+User validation failed: DuplicateUserName;DuplicateEmail.
+Now listening on: https://localhost:5001
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: /Users/sabanaskidashvili/Projects/chatbot
+Getting all dish
+User validation failed: DuplicateUserName;DuplicateEmail.
+Now listening on: https://localhost:5001
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: /Users/sabanaskidashvili/Projects/chatbot
+Getting all dish
+User validation failed: DuplicateUserName;DuplicateEmail.
+Now listening on: https://localhost:5001
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: /Users/sabanaskidashvili/Projects/chatbot
+Getting all dish
