@@ -73,7 +73,7 @@ namespace chatbot.Controllers
                 _telegramBotClient.StartReceiving();
 
             };
-            await _hubcontext.Clients.All.SendAsync("ReceiveMessage", "Hello");
+            await _hubcontext.Clients.All.SendAsync("ReceiveMessage", message);
             return Ok();
         }
     }
