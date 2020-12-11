@@ -1,15 +1,15 @@
 ﻿<Properties StartupConfiguration="{70A13A3E-5F1A-41AE-B909-AD43D42C1F5D}|Default">
   <MonoDevelop.Ide.ItemProperties.chatbot PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/BotController.cs">
     <Files>
       <File FileName="Controllers/ChatController.cs" Line="30" Column="12" />
-      <File FileName="Controllers/BotController.cs" />
+      <File FileName="Controllers/BotController.cs" Line="69" Column="1" />
       <File FileName="Commands/BeginCommand.cs" />
       <File FileName="Commands/StartCommand.cs" />
       <File FileName="Models/EmailClass.cs" />
-      <File FileName="Models/TelegramUser.cs" />
+      <File FileName="Models/TelegramUser.cs" Line="1" Column="1" />
       <File FileName="Startup.cs" />
-      <File FileName="appsettings.json" Line="3" Column="121" />
+      <File FileName="appsettings.json" Line="15" Column="1" />
       <File FileName="Data/DBObjects.cs" Line="15" Column="1" />
       <File FileName="Controllers/HomeController.cs" />
       <File FileName="Controllers/AnnouncmentController.cs" />
@@ -57,10 +57,9 @@
       <File FileName="logs/FileLoggerExtensions.cs" />
       <File FileName="logs/FileLoggerProvider.cs" />
       <File FileName="AllLog.txt" />
-      <File FileName="web.config" />
       <File FileName="Hubs/MessageHub.cs" />
       <File FileName="wwwroot/js/message.js" />
-      <File FileName="Views/Shared/_LoginPartial.cshtml" Line="29" Column="249" />
+      <File FileName="Views/Shared/_LoginPartial.cshtml" Line="29" Column="98" />
       <File FileName="Program.cs" Line="1" Column="1" />
     </Files>
     <Pads>
@@ -72,10 +71,10 @@
               <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
               <Node name="Hubs" expanded="True" />
+              <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Shared" expanded="True" />
               </Node>
-              <Node name="appsettings.json" selected="True" />
             </Node>
           </Node>
         </State>
