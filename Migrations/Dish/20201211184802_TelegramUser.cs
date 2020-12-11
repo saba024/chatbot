@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace chatbot.Migrations
+namespace chatbot.Migrations.Dish
 {
-    public partial class Inital : Migration
+    public partial class TelegramUser : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

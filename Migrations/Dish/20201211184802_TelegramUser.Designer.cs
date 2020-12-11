@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using chatbot.Data;
 
-namespace chatbot.Migrations
+namespace chatbot.Migrations.Dish
 {
     [DbContext(typeof(DishContext))]
-    [Migration("20201130185803_Inital")]
-    partial class Inital
+    [Migration("20201211184802_TelegramUser")]
+    partial class TelegramUser
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

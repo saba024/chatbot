@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using chatbot.Data;
 
-namespace chatbot.Migrations
+namespace chatbot.Migrations.Dish
 {
     [DbContext(typeof(DishContext))]
     partial class DishContextModelSnapshot : ModelSnapshot

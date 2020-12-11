@@ -22,6 +22,7 @@ using chatbot.Repositories;
 using Microsoft.Extensions.Logging;
 using System.IO;
 using chatbot.logs;
+using chatbot.Models;
 
 namespace chatbot
 {
@@ -53,6 +54,10 @@ namespace chatbot
             })
               .AddRoles<IdentityRole>()
               .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddIdentity<TelegramUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>();
+
             services.AddControllersWithViews();
             services.AddTransient<IGetDish, DishRepository>();
             services.AddTransient<IDishCategory, CategoryRepository>();
