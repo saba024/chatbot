@@ -32,7 +32,7 @@ namespace chatbot.Commands
 
                         new []
                         {
-                        InlineKeyboardButton.WithUrl("Открыть Меню", "https://professorweb.ru/my/ASP_NET/mvc/level1/"),
+                        InlineKeyboardButton.WithUrl("Открыть Меню", "https:"),
                         },
 
                         new[]

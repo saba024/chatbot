@@ -23,14 +23,15 @@ namespace chatbot.Controllers
         private readonly ICommandService _commandService;
         ObservableCollection<TelegramUser> Users;
         private IHubContext<MessageHub> _hubcontext;
+        private MessageHub _hub;
         
 
-        public BotController(ICommandService commandService, ITelegramBotClient telegramBotClient, IHubContext<MessageHub> hubcontext)
+        public BotController(ICommandService commandService, ITelegramBotClient telegramBotClient, IHubContext<MessageHub> hubcontext, MessageHub hub)
         {
             _commandService = commandService;
             _telegramBotClient = telegramBotClient;
             _hubcontext = hubcontext;
-            
+            _hub = hub;
         }
 
         [HttpGet]
@@ -73,7 +74,8 @@ namespace chatbot.Controllers
                 _telegramBotClient.StartReceiving();
 
             };
-            await _hubcontext.Clients.All.SendAsync("ReceiveMessage", recmessage);
+
+            await _hubcontext.Clients.All.SendAsync("ReceiveMessage", message.Text);
             return Ok();
         }
     }

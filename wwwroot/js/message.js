@@ -9,8 +9,8 @@ connection.on("ReceiveMessage", function (message) {
     div.innerHTML = msg + "<hr/>";
     $('#discussion').append('<p style="color:blue;text-align:right;"><strong><img = src="https://www.phplivesupport.com/pics/icons/avatars/public/avatar_71.png" title="Peter">'
         + ' </strong> ' + (message) + '</p>');
-    //document.getElementById("discussion").append('<p style="color:green; text-align:left; width:500px"><strong><img = src="https://www.phplivesupport.com/pics/icons/avatars/public/avatar_7.png" title="Atir">'
-      //  + ' </strong> ' + message + '</p>');
+    document.getElementById("discussion").append('<p style="color:green; text-align:left; width:500px"><strong><img = src="https://www.phplivesupport.com/pics/icons/avatars/public/avatar_7.png" title="Atir">'
+        + ' </strong> ' + message + '</p>');
 })
 
 connection.start().catch(function (err) {
