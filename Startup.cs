@@ -55,8 +55,7 @@ namespace chatbot
               .AddRoles<IdentityRole>()
               .AddEntityFrameworkStores<ApplicationDbContext>();
 
-            services.AddIdentity<TelegramUser, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+            
 
             services.AddControllersWithViews();
             services.AddTransient<IGetDish, DishRepository>();
