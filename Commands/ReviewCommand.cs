@@ -11,7 +11,7 @@ namespace chatbot.Commands
     public class ReviewCommand : TelegramCommand
     {
 
-        public override string Name { get; } = "";
+        public override string Name { get; } = "Отзывы";
 
         public override bool Contains(Message message)
         {
@@ -39,7 +39,7 @@ namespace chatbot.Commands
 
             };
 
-            await client.SendTextMessageAsync(chatId, "Наш ресторан..." + "График работы:",
+            await client.SendTextMessageAsync(chatId, "Оставьте отзыв",
                 parseMode: ParseMode.Html, replyMarkup: keyboard);
         }
     }
