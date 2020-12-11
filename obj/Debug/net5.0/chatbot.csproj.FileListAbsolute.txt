@@ -121,4 +121,4 @@
 /Users/sabanaskidashvili/Projects/chatbot/obj/Debug/net5.0/Razor/Views/Chat/Index.cshtml.g.cs
 /Users/sabanaskidashvili/Projects/chatbot/obj/Debug/net5.0/Razor/Views/Role/Index.cshtml.g.cs
 /Users/sabanaskidashvili/Projects/chatbot/obj/Debug/net5.0/Razor/Views/Role/Update.cshtml.g.cs
-/Users/sabanaskidashvili/Projects/chatbot/bin/Debug/net5.0/web.config
+/Users/sabanaskidashvili/Projects/chatbot/obj/Debug/net5.0/Razor/Views/Home/Dashboard.cshtml.g.cs

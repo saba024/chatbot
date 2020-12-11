@@ -1,21 +1,21 @@
 ﻿<Properties StartupConfiguration="{70A13A3E-5F1A-41AE-B909-AD43D42C1F5D}|Default">
   <MonoDevelop.Ide.ItemProperties.chatbot PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/BotController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Data/PanelDbContext.cs">
     <Files>
       <File FileName="Controllers/ChatController.cs" Line="30" Column="12" />
-      <File FileName="Controllers/BotController.cs" Line="69" Column="1" />
+      <File FileName="Controllers/BotController.cs" Line="59" Column="1" />
       <File FileName="Commands/BeginCommand.cs" />
       <File FileName="Commands/StartCommand.cs" />
       <File FileName="Models/EmailClass.cs" />
-      <File FileName="Models/TelegramUser.cs" Line="1" Column="1" />
-      <File FileName="Startup.cs" />
-      <File FileName="appsettings.json" Line="15" Column="1" />
-      <File FileName="Data/DBObjects.cs" Line="15" Column="1" />
-      <File FileName="Controllers/HomeController.cs" />
+      <File FileName="Models/TelegramUser.cs" Line="21" Column="2" />
+      <File FileName="Startup.cs" Line="43" Column="50" />
+      <File FileName="appsettings.json" />
+      <File FileName="Data/DBObjects.cs" />
+      <File FileName="Controllers/HomeController.cs" Line="40" Column="41" />
       <File FileName="Controllers/AnnouncmentController.cs" />
       <File FileName="Controllers/MenuController.cs" />
-      <File FileName="Views/Shared/_Layout.cshtml" Line="1" Column="1" />
-      <File FileName="Views/Shared/_Layout2.cshtml" Line="1" Column="1" />
+      <File FileName="Views/Shared/_Layout.cshtml" />
+      <File FileName="Views/Shared/_Layout2.cshtml" />
       <File FileName="Views/Shared/MenuLayout.cshtml" />
       <File FileName="Views/Announcment/Index.cshtml" />
       <File FileName="Controllers/DishController.cs" />
@@ -31,7 +31,7 @@
       <File FileName="Models/Order.cs" />
       <File FileName="Models/Dish.cs" />
       <File FileName="Views/Dish/Index.cshtml" />
-      <File FileName="Views/Home/Index.cshtml" />
+      <File FileName="Views/Home/Index.cshtml" Line="1" Column="1" />
       <File FileName="ServiceCollectionExtensions.cs" />
       <File FileName="Properties/launchSettings.json" />
       <File FileName="appsettings.Development.json" />
@@ -46,7 +46,7 @@
       <File FileName="Controllers/RoleController.cs" />
       <File FileName="Views/Role/Index.cshtml" />
       <File FileName="Views/Chat/Index.cshtml" />
-      <File FileName="Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="Views/_ViewStart.cshtml" />
       <File FileName="Models/RoleEdit.cs" />
       <File FileName="Models/Feedback.cs" />
       <File FileName="Models/RoleModification.cs" />
@@ -59,8 +59,11 @@
       <File FileName="AllLog.txt" />
       <File FileName="Hubs/MessageHub.cs" />
       <File FileName="wwwroot/js/message.js" />
-      <File FileName="Views/Shared/_LoginPartial.cshtml" Line="29" Column="98" />
-      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="Views/Shared/_LoginPartial.cshtml" Line="29" Column="1" />
+      <File FileName="Program.cs" />
+      <File FileName="Views/Home/Index.cshtml" Line="2" Column="50" />
+      <File FileName="Data/EmptyClass.cs" Line="23" Column="1" />
+      <File FileName="Data/PanelDbContext.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -69,10 +72,14 @@
             <Node name="chatbot" expanded="True">
               <Node name="Commands" expanded="True" />
               <Node name="Controllers" expanded="True" />
-              <Node name="Data" expanded="True" />
+              <Node name="Data" expanded="True">
+                <Node name="PanelDbContext.cs" selected="True" />
+              </Node>
               <Node name="Hubs" expanded="True" />
+              <Node name="Mocks" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
             </Node>

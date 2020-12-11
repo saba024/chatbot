@@ -1,57 +1,21 @@
-﻿using System;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Diagnostics.CodeAnalysis;
+﻿
+using Microsoft.AspNetCore.Identity;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace chatbot.Models
 {
-    public class TelegramUser : INotifyPropertyChanged
+    public class TelegramUser : IdentityUser
     {
+        public int TelegramId { get; set; }
 
-        private string nick;
-        private long id;
-        public ObservableCollection<string> Messages { get; set; }
+        public String ChatIds { get; set; } // id1|id2|id3
 
-        public TelegramUser()
-        {
+        public String LastValidationCode { get; set; }
 
-        }
-
-        public TelegramUser(string nick, long id)
-        {
-            this.nick = nick;
-            this.id = id;
-        }
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        public string Nick
-        {
-            get { return this.nick; }
-            set
-            {
-                this.nick = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(this.Nick)));
-            }
-        }
-
-        public long Id
-        {
-            get { return this.id; }
-            set
-            {
-                this.id = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(this.Id)));
-            }
-        }
-
-        public void AddMessage(string Text)
-        {
-            Messages.Add(Text);
-        }
-
-        public bool Equals(TelegramUser other)
-        {
-            return other.Id == this.Id;
-        }
+        public bool CheckCode(string code) => LastValidationCode == code;
     }
 }

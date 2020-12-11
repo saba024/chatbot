@@ -58,3 +58,13 @@ ClientConnectionId:25099d30-8e0b-4e0b-822f-f16989da1b67
 Error Number:40615,State:1,Class:14
 User validation failed: DuplicateUserName;DuplicateEmail.
 User validation failed: DuplicateUserName;DuplicateEmail.
+User validation failed: DuplicateUserName;DuplicateEmail.
+An unhandled exception has occurred while executing the request.
+An unhandled exception has occurred while executing the request.
+An exception occurred while calculating the database error page content. Skipping display of the database error page.
+An exception occurred while calculating the database error page content. Skipping display of the database error page.
+User validation failed: DuplicateUserName;DuplicateEmail.
+An unhandled exception has occurred while executing the request.
+An unhandled exception has occurred while executing the request.
+An exception occurred while calculating the database error page content. Skipping display of the database error page.
+An exception occurred while calculating the database error page content. Skipping display of the database error page.
