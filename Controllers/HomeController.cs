@@ -31,13 +31,9 @@ namespace chatbot.Controllers
             _db1 = context;
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
 
         [Authorize(Roles = RoleNames.Administrator)]
-        public IActionResult Dashboard()
+        public IActionResult Index()
         {
             DashboardViewModel dashboardViewModel = new DashboardViewModel();
 

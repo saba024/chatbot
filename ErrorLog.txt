@@ -74,3 +74,11 @@ Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot open server 'sabaserv
 ClientConnectionId:d8b63c58-2491-4642-8a7d-f269417116ee
 Error Number:40615,State:1,Class:14
 User validation failed: DuplicateUserName.
+User validation failed: DuplicateUserName.
+An unhandled exception has occurred while executing the request.
+An unhandled exception has occurred while executing the request.
+An exception occurred while calculating the database error page content. Skipping display of the database error page.
+An exception occurred while calculating the database error page content. Skipping display of the database error page.
+User validation failed: DuplicateUserName;DuplicateEmail.
+An unhandled exception has occurred while executing the request.
+An exception occurred while calculating the database error page content. Skipping display of the database error page.
