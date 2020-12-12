@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{70A13A3E-5F1A-41AE-B909-AD43D42C1F5D}|Default">
   <MonoDevelop.Ide.ItemProperties.chatbot PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Areas/Identity/Pages/_ViewStart.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
     <Files>
       <File FileName="Areas/Identity/Pages/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="appsettings.json" Line="5" Column="7" />
+      <File FileName="Startup.cs" Line="41" Column="33" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,9 +13,7 @@
             <Node name="chatbot" expanded="True">
               <Node name="Areas" expanded="True">
                 <Node name="Identity" expanded="True">
-                  <Node name="Pages" expanded="True">
-                    <Node name="_ViewStart.cshtml" selected="True" />
-                  </Node>
+                  <Node name="Pages" expanded="True" />
                 </Node>
               </Node>
               <Node name="Commands" expanded="True" />
@@ -35,6 +35,8 @@
                 <Node name="Menu" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
+              <Node name="appsettings.json" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>

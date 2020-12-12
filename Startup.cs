@@ -41,7 +41,7 @@ namespace chatbot
             string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<DishContext>(options => options.UseSqlServer(connection));
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connection));
-            services.AddDbContext<PanelDbContext>(options => options.UseSqlServer(connection));
+            services.AddDbContext<PanelDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("PanelDbConnection")));
 
             services.AddDatabaseDeveloperPageExceptionFilter();
 

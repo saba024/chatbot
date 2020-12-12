@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using chatbot.Data;
 
-namespace chatbot.Migrations.PanelDb
+namespace chatbot.Migrations
 {
     [DbContext(typeof(PanelDbContext))]
-    partial class PanelDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201212101941_TelegramUser")]
+    partial class TelegramUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
