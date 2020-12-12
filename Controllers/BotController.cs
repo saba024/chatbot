@@ -21,7 +21,7 @@ namespace chatbot.Controllers
     {
         private readonly ITelegramBotClient _telegramBotClient;
         private readonly ICommandService _commandService;
-        ObservableCollection<TelegramUser> Users;
+        
         private IHubContext<MessageHub> _hubcontext;
         private MessageHub _hub;
         

@@ -1,42 +1,49 @@
 ﻿<Properties StartupConfiguration="{70A13A3E-5F1A-41AE-B909-AD43D42C1F5D}|Default">
   <MonoDevelop.Ide.ItemProperties.chatbot PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Data/DBObjects.cs">
     <Files>
       <File FileName="Areas/Identity/Pages/_ViewStart.cshtml" Line="1" Column="1" />
-      <File FileName="appsettings.json" Line="5" Column="7" />
-      <File FileName="Startup.cs" Line="41" Column="33" />
+      <File FileName="appsettings.json" />
+      <File FileName="Startup.cs" Line="52" Column="1" />
+      <File FileName="Program.cs" Line="21" Column="24" />
+      <File FileName="Views/Shared/_Layout.cshtml" />
+      <File FileName="Views/Shared/_Layout2.cshtml" />
+      <File FileName="Views/Home/Index.cshtml" Line="7" Column="1" />
+      <File FileName="Views/Home/Dashboard.cshtml" />
+      <File FileName="Views/Dish/Create.cshtml" />
+      <File FileName="Views/Dish/Index.cshtml" />
+      <File FileName="Views/Chat/Index.cshtml" Line="1" Column="1" />
+      <File FileName="Views/Announcment/Index.cshtml" />
+      <File FileName="Views/Role/Index.cshtml" Line="1" Column="1" />
+      <File FileName="Views/Role/Update.cshtml" />
+      <File FileName="ViewModels/DashboardViewModel.cs" />
+      <File FileName="Controllers/BotController.cs" Line="64" Column="2" />
+      <File FileName="Controllers/ChatController.cs" Line="1" Column="1" />
+      <File FileName="Controllers/DishController.cs" Line="1" Column="1" />
+      <File FileName="Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="Controllers/MenuController.cs" Line="1" Column="1" />
+      <File FileName="Controllers/RoleController.cs" Line="69" Column="21" />
+      <File FileName="SeedData.cs" Line="26" Column="76" />
+      <File FileName="Data/DishContext.cs" Line="1" Column="1" />
+      <File FileName="Data/PanelDbContext.cs" Line="16" Column="10" />
+      <File FileName="Models/TelegramUser.cs" Line="11" Column="26" />
+      <File FileName="Data/DBObjects.cs" Line="15" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="chatbot" expanded="True">
             <Node name="chatbot" expanded="True">
-              <Node name="Areas" expanded="True">
-                <Node name="Identity" expanded="True">
-                  <Node name="Pages" expanded="True" />
-                </Node>
-              </Node>
               <Node name="Commands" expanded="True" />
               <Node name="Controllers" expanded="True" />
-              <Node name="Data" expanded="True" />
+              <Node name="Data" expanded="True">
+                <Node name="DBObjects.cs" selected="True" />
+              </Node>
               <Node name="Hubs" expanded="True" />
               <Node name="Interfaces" expanded="True" />
-              <Node name="Migrations" expanded="True">
-                <Node name="PanelDb" expanded="True">
-                  <Node name="20201212095155_TelegramUser.cs" expanded="True" />
-                </Node>
-              </Node>
-              <Node name="Mocks" expanded="True" />
-              <Node name="Repositories" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Chat" expanded="True" />
-                <Node name="Dish" expanded="True" />
-                <Node name="Home" expanded="True" />
-                <Node name="Menu" expanded="True" />
-                <Node name="Shared" expanded="True" />
-              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
-              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
