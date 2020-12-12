@@ -41,7 +41,8 @@ namespace chatbot
             string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<DishContext>(options => options.UseSqlServer(connection));
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connection));
-            
+            services.AddDbContext<PanelDbContext>(options => options.UseSqlServer(connection));
+
             services.AddDatabaseDeveloperPageExceptionFilter();
 
             services.AddDefaultIdentity<IdentityUser>(opt =>
@@ -55,7 +56,10 @@ namespace chatbot
               .AddRoles<IdentityRole>()
               .AddEntityFrameworkStores<ApplicationDbContext>();
 
-            
+            services.AddIdentity<TelegramUser, IdentityRole>()
+               .AddEntityFrameworkStores<PanelDbContext>();
+
+
 
             services.AddControllersWithViews();
             services.AddTransient<IGetDish, DishRepository>();

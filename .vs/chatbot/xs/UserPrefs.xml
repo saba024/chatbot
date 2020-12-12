@@ -1,91 +1,40 @@
 ﻿<Properties StartupConfiguration="{70A13A3E-5F1A-41AE-B909-AD43D42C1F5D}|Default">
   <MonoDevelop.Ide.ItemProperties.chatbot PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Areas/Identity/Pages/_ViewStart.cshtml">
     <Files>
-      <File FileName="Controllers/ChatController.cs" Line="30" Column="12" />
-      <File FileName="Controllers/BotController.cs" />
-      <File FileName="Commands/BeginCommand.cs" />
-      <File FileName="Commands/StartCommand.cs" />
-      <File FileName="Models/EmailClass.cs" />
-      <File FileName="Models/TelegramUser.cs" />
-      <File FileName="Startup.cs" Line="47" Column="1" />
-      <File FileName="appsettings.json" />
-      <File FileName="Data/DBObjects.cs" />
-      <File FileName="Controllers/HomeController.cs" />
-      <File FileName="Controllers/AnnouncmentController.cs" />
-      <File FileName="Controllers/MenuController.cs" />
-      <File FileName="Views/Shared/_Layout.cshtml" />
-      <File FileName="Views/Shared/_Layout2.cshtml" />
-      <File FileName="Views/Shared/MenuLayout.cshtml" />
-      <File FileName="Views/Announcment/Index.cshtml" />
-      <File FileName="Controllers/DishController.cs" />
-      <File FileName="Interfaces/TelegramCommand.cs" />
-      <File FileName="Interfaces/ICommandService.cs" />
-      <File FileName="Services/CommandService.cs" />
-      <File FileName="Commands/AboutCommand.cs" />
-      <File FileName="Models/ErrorViewModel.cs" />
-      <File FileName="Commands/ReviewCommand.cs" />
-      <File FileName="Data/ApplicationDbContext.cs" />
-      <File FileName="Data/DishContext.cs" />
-      <File FileName="Models/Category.cs" />
-      <File FileName="Models/Order.cs" />
-      <File FileName="Models/Dish.cs" />
-      <File FileName="Views/Dish/Index.cshtml" />
-      <File FileName="Views/Home/Index.cshtml" />
-      <File FileName="ServiceCollectionExtensions.cs" />
-      <File FileName="Properties/launchSettings.json" />
-      <File FileName="appsettings.Development.json" />
-      <File FileName="Repositories/DishRepository.cs" />
-      <File FileName="Repositories/CategoryRepository.cs" />
-      <File FileName="Interfaces/ITelegramUser.cs" />
-      <File FileName="Interfaces/IDishCategory.cs" />
-      <File FileName="Interfaces/IGetDish.cs" />
-      <File FileName="Areas/Identity/Pages/_ViewStart.cshtml" />
-      <File FileName="Views/_ViewImports.cshtml" />
-      <File FileName="SeedData.cs" />
-      <File FileName="Controllers/RoleController.cs" />
-      <File FileName="Views/Role/Index.cshtml" />
-      <File FileName="Views/Chat/Index.cshtml" />
-      <File FileName="Views/_ViewStart.cshtml" />
-      <File FileName="Models/RoleEdit.cs" />
-      <File FileName="Models/Feedback.cs" />
-      <File FileName="Models/RoleModification.cs" />
-      <File FileName="Views/Role/Update.cshtml" />
-      <File FileName="package.json" />
-      <File FileName="TagHelper/RoleUsersTH.cs" />
-      <File FileName="logs/FileLogger.cs" />
-      <File FileName="logs/FileLoggerExtensions.cs" />
-      <File FileName="logs/FileLoggerProvider.cs" />
-      <File FileName="AllLog.txt" />
-      <File FileName="Hubs/MessageHub.cs" />
-      <File FileName="wwwroot/js/message.js" />
-      <File FileName="Views/Shared/_LoginPartial.cshtml" />
-      <File FileName="Program.cs" />
-      <File FileName="Views/Menu/List.cshtml" />
-      <File FileName="Views/Dish/Create.cshtml" />
-      <File FileName="Views/Dish/Update.cshtml" />
-      <File FileName="Views/Shared/_LoginPartial.cshtml.orig" />
+      <File FileName="Areas/Identity/Pages/_ViewStart.cshtml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="chatbot" expanded="True">
             <Node name="chatbot" expanded="True">
+              <Node name="Areas" expanded="True">
+                <Node name="Identity" expanded="True">
+                  <Node name="Pages" expanded="True">
+                    <Node name="_ViewStart.cshtml" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
               <Node name="Commands" expanded="True" />
               <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
               <Node name="Hubs" expanded="True" />
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Migrations" expanded="True">
+                <Node name="PanelDb" expanded="True">
+                  <Node name="20201212095155_TelegramUser.cs" expanded="True" />
+                </Node>
+              </Node>
               <Node name="Mocks" expanded="True" />
-              <Node name="Models" expanded="True" />
+              <Node name="Repositories" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Announcment" expanded="True" />
+                <Node name="Chat" expanded="True" />
                 <Node name="Dish" expanded="True" />
                 <Node name="Home" expanded="True" />
                 <Node name="Menu" expanded="True" />
-                <Node name="Role" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
-              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
