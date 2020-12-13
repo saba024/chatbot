@@ -46,7 +46,7 @@ namespace chatbot
             services.AddDatabaseDeveloperPageExceptionFilter();
 
 
-            services.AddDefaultIdentity<IdentityUser>(opt =>
+            services.AddDefaultIdentity<TelegramUser>(opt =>
             {
                 opt.Password.RequireDigit = true;
                 opt.Password.RequiredLength = 5;

@@ -9,7 +9,7 @@ namespace chatbot.Data
 {
     public class PanelDbContext : IdentityDbContext
     {
-        public DbSet<TelegramUser> TelegramUser { get; set; }
+        
         public PanelDbContext(DbContextOptions<PanelDbContext> options)
             : base(options)
         {

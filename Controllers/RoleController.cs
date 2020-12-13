@@ -13,10 +13,10 @@ namespace chatbot.Controllers
     public class RoleController : Controller
     {
         private RoleManager<IdentityRole> roleManager;
-        private UserManager<IdentityUser> userManager;
+        private UserManager<TelegramUser> userManager;
         
 
-        public RoleController(RoleManager<IdentityRole> roleMgr, UserManager<IdentityUser> userMrg)
+        public RoleController(RoleManager<IdentityRole> roleMgr, UserManager<TelegramUser> userMrg)
         {
             roleManager = roleMgr;
             userManager = userMrg;
@@ -33,9 +33,9 @@ namespace chatbot.Controllers
         public async Task<IActionResult> Update(string id)
         {
             IdentityRole role = await roleManager.FindByIdAsync(id);
-            List<IdentityUser> members = new List<IdentityUser>();
-            List<IdentityUser> nonMembers = new List<IdentityUser>();
-            foreach (IdentityUser user in userManager.Users)
+            List<TelegramUser> members = new List<TelegramUser>();
+            List<TelegramUser> nonMembers = new List<TelegramUser>();
+            foreach (TelegramUser user in userManager.Users)
             {
                 var list = await userManager.IsInRoleAsync(user, role.Name) ? members : nonMembers;
                 list.Add(user);
@@ -56,7 +56,7 @@ namespace chatbot.Controllers
             {
                 foreach (string userId in model.AddIds ?? new string[] { })
                 {
-                    IdentityUser user = await userManager.FindByIdAsync(userId);
+                    TelegramUser user = await userManager.FindByIdAsync(userId);
                     if (user != null)
                     {
                         result = await userManager.AddToRoleAsync(user, model.RoleName);
@@ -66,7 +66,7 @@ namespace chatbot.Controllers
                 }
                 foreach (string userId in model.DeleteIds ?? new string[] { })
                 {
-                    IdentityUser user = await userManager.FindByIdAsync(userId);
+                    TelegramUser user = await userManager.FindByIdAsync(userId);
                     if (user != null)
                     {
                         result = await userManager.RemoveFromRoleAsync(user, model.RoleName);

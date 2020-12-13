@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using chatbot.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -23,7 +24,7 @@ namespace chatbot
                 }
             }
 
-            var userMgr = provider.GetRequiredService<UserManager<IdentityUser>>();
+            var userMgr = provider.GetRequiredService<UserManager<TelegramUser>>();
 
             var adminResult = await userMgr.CreateAsync(DefaultUsers.Administrator, "User123!");
 
@@ -59,14 +60,14 @@ namespace chatbot
 
     public static class DefaultUsers
     {
-        public static readonly IdentityUser Administrator = new IdentityUser
+        public static readonly TelegramUser Administrator = new TelegramUser
         {
             Email = "Admin@test.ru",
             EmailConfirmed = true,
             UserName = "Admin@test.ru",
         };
 
-        public static readonly IdentityUser User = new IdentityUser
+        public static readonly TelegramUser User = new TelegramUser
         {
             Email = "User@test.ru",
             EmailConfirmed = true,
