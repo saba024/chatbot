@@ -55,7 +55,7 @@ namespace chatbot
                 opt.SignIn.RequireConfirmedAccount = false;
             })
                .AddRoles<IdentityRole>()
-               .AddEntityFrameworkStores<ApplicationDbContext>();
+               .AddEntityFrameworkStores<PanelDbContext>();
 
 
 

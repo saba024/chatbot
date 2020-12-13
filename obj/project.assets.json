@@ -9262,7 +9262,7 @@
       "outputPath": "/Users/sabanaskidashvili/Projects/chatbot/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/sabanaskidashvili/.config/NuGet/NuGet.Config"
+        "/Users/sabanaskidashvili/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
