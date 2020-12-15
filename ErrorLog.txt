@@ -246,3 +246,14 @@ User validation failed: DuplicateUserName;DuplicateEmail.
 User validation failed: DuplicateUserName;DuplicateEmail.
 User validation failed: DuplicateUserName;DuplicateEmail.
 User validation failed: DuplicateUserName;DuplicateEmail.
+User validation failed: DuplicateUserName;DuplicateEmail.
+User validation failed: DuplicateUserName;DuplicateEmail.
+The view 'SiteError' was not found. Searched locations: /Views/Account/SiteError.cshtml, /Views/Shared/SiteError.cshtml, /Pages/Shared/SiteError.cshtml
+An unhandled exception has occurred while executing the request.
+The view 'SiteError' was not found. Searched locations: /Views/Account/SiteError.cshtml, /Views/Shared/SiteError.cshtml, /Pages/Shared/SiteError.cshtml
+An unhandled exception has occurred while executing the request.
+An exception occurred while calculating the database error page content. Skipping display of the database error page.
+An exception occurred while calculating the database error page content. Skipping display of the database error page.
+The view 'SiteError' was not found. Searched locations: /Views/Account/SiteError.cshtml, /Views/Shared/SiteError.cshtml, /Pages/Shared/SiteError.cshtml
+An unhandled exception has occurred while executing the request.
+An exception occurred while calculating the database error page content. Skipping display of the database error page.

@@ -68,7 +68,7 @@ namespace chatbot
                .AddFluentValidation();
             services.AddMvc();
             services.AddSignalR();
-            services.AddSingleton<ITelegramToken>(new TelegramToken(Configuration.GetConnectionString("Token")));
+            services.AddSingleton<ITelegramToken>(new TelegramToken(Configuration["Token"]));
             services.AddScoped<ITelegramService, TelegramService>();
         }
 
