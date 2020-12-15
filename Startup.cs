@@ -41,8 +41,8 @@ namespace chatbot
             string connection = Configuration.GetConnectionString("DefaultConnection");
             services.AddDbContext<DishContext>(options => options.UseSqlServer(connection));
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(connection));
+            services.AddDbContext<ChatInfoContext>(options => options.UseSqlServer(Configuration.GetConnectionString("PanelDbConnection")));
             services.AddDbContext<PanelDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("PanelDbConnection")));
-
             services.AddDatabaseDeveloperPageExceptionFilter();
 
 
@@ -76,7 +76,8 @@ namespace chatbot
                .AddFluentValidation();
             services.AddMvc();
             services.AddSignalR();
-
+            services.AddSingleton<ITelegramToken>(new TelegramToken(Configuration.GetConnectionString("Token")));
+            services.AddScoped<ITelegramService, TelegramService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

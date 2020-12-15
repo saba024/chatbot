@@ -61,7 +61,6 @@ using Microsoft.AspNetCore.Identity;
                 return __backed__tagHelperScopeManager;
             }
         }
-        private global::chatbot.TagHelpers.RoleUsersTH __chatbot_TagHelpers_RoleUsersTH;
         private global::Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_AnchorTagHelper;
         private global::Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_FormTagHelper;
         private global::Microsoft.AspNetCore.Mvc.TagHelpers.RenderAtEndOfFormTagHelper __Microsoft_AspNetCore_Mvc_TagHelpers_RenderAtEndOfFormTagHelper;
@@ -93,32 +92,18 @@ using Microsoft.AspNetCore.Identity;
 #line default
 #line hidden
 #nullable disable
-            WriteLiteral("</td>\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("td", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc332897988d0432600fa756e875d8f1af8a64325728", async() => {
-            }
-            );
-            __chatbot_TagHelpers_RoleUsersTH = CreateTagHelper<global::chatbot.TagHelpers.RoleUsersTH>();
-            __tagHelperExecutionContext.Add(__chatbot_TagHelpers_RoleUsersTH);
-            BeginWriteTagHelperAttribute();
+            WriteLiteral("</td>\n                <td");
+            BeginWriteAttribute("i-role", " i-role=\"", 411, "\"", 428, 1);
 #nullable restore
 #line 14 "/Users/sabanaskidashvili/Projects/chatbot/Views/Role/Index.cshtml"
-                WriteLiteral(role.Id);
+WriteAttributeValue("", 420, role.Id, 420, 8, false);
 
 #line default
 #line hidden
 #nullable disable
-            __tagHelperStringValueBuffer = EndWriteTagHelperAttribute();
-            __chatbot_TagHelpers_RoleUsersTH.Role = __tagHelperStringValueBuffer;
-            __tagHelperExecutionContext.AddTagHelperAttribute("i-role", __chatbot_TagHelpers_RoleUsersTH.Role, global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
-            await __tagHelperRunner.RunAsync(__tagHelperExecutionContext);
-            if (!__tagHelperExecutionContext.Output.IsContentModified)
-            {
-                await __tagHelperExecutionContext.SetOutputContentAsync();
-            }
-            Write(__tagHelperExecutionContext.Output);
-            __tagHelperExecutionContext = __tagHelperScopeManager.End();
-            WriteLiteral("\n                <td>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc332897988d0432600fa756e875d8f1af8a64327158", async() => {
+            EndWriteAttribute();
+            WriteLiteral("></td>\n                <td>");
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc332897988d0432600fa756e875d8f1af8a64326004", async() => {
                 WriteLiteral("Update");
             }
             );
@@ -150,7 +135,7 @@ using Microsoft.AspNetCore.Identity;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</td>\n                <td>\n                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc332897988d0432600fa756e875d8f1af8a64329426", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc332897988d0432600fa756e875d8f1af8a64328272", async() => {
                 WriteLiteral("\n                        <button type=\"submit\" class=\"btn btn-sm btn-danger\">\n                            Delete\n                        </button>\n                    ");
             }
             );

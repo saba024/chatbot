@@ -4,15 +4,15 @@ using Microsoft.AspNetCore.Razor.TagHelpers;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace chatbot.TagHelpers
+namespace chatbot.TagHelp
 {
     [HtmlTargetElement("td", Attributes = "i-role")]
     public class RoleUsersTH : TagHelper
     {
-        private UserManager<IdentityUser> userManager;
+        private UserManager<TelegramUser> userManager;
         private RoleManager<IdentityRole> roleManager;
 
-        public RoleUsersTH(UserManager<IdentityUser> usermgr, RoleManager<IdentityRole> rolemgr)
+        public RoleUsersTH(UserManager<TelegramUser> usermgr, RoleManager<IdentityRole> rolemgr)
         {
             userManager = usermgr;
             roleManager = rolemgr;

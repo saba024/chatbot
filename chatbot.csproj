@@ -42,8 +42,13 @@
     <Folder Include="Views\Role\" />
     <Folder Include="TagHelper\" />
     <Folder Include="logs\" />
+    <Folder Include="ViewModels\Account\" />
+    <Folder Include="Views\Dashboard\" />
+    <Folder Include="Views\Account\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="Views\Home\Privacy.cshtml" />
+    <Content Remove="Views\Account\AddChatId.cshtml" />
   </ItemGroup>
 </Project>

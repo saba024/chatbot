@@ -17,49 +17,20 @@ namespace chatbot.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly IGetDish _getDish;
-        private readonly IDishCategory _dishCategory;
-        private readonly DishContext _db;
-        private readonly ApplicationDbContext _db1;
 
-        public HomeController(ILogger<HomeController> logger, IDishCategory dishCategory, IGetDish getDish, DishContext db, ApplicationDbContext context)
+        public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
-            _dishCategory = dishCategory;
-            _getDish = getDish;
-            _db = db;
-            _db1 = context;
         }
 
 
-        [Authorize(Roles = RoleNames.Administrator)]
+        
         public IActionResult Index()
         {
-            DashboardViewModel dashboardViewModel = new DashboardViewModel();
-
-            dashboardViewModel.dish_count = _db.Dishes.Count();
-            dashboardViewModel.category_count = _db.Categories.Count();
-            dashboardViewModel.users_count = _db1.Users.Count();
-            _logger.LogInformation("Getting all dish");
-            return View(dashboardViewModel);
-        }
-
-        [Authorize(Roles = RoleNames.Administrator)]
-        public IActionResult Chat()
-        {
-            
             return View();
         }
 
-
-        [HttpPost("dish/list")]
-        public IActionResult Add([FromForm] string email)
-        {
-            EmailClass.recepients = email;
-            _logger.LogInformation("Subscribe by email");
-            return RedirectToAction("Index");
-        }
-
+      
         public IActionResult Privacy()
         {
             return View();
