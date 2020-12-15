@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{70A13A3E-5F1A-41AE-B909-AD43D42C1F5D}|Default">
   <MonoDevelop.Ide.ItemProperties.chatbot PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/HomeController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
     <Files>
       <File FileName="Helpers/RandomHelper.cs" Line="14" Column="6" />
       <File FileName="TagHelp/RoleUsersTH.cs" />
@@ -13,15 +13,14 @@
       <File FileName="Controllers/DashboardController.cs" />
       <File FileName="Controllers/ChatController.cs" />
       <File FileName="Views/Menu/List.cshtml" />
+      <File FileName="Startup.cs" Line="49" Column="25" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="chatbot" expanded="True">
             <Node name="chatbot" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="HomeController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="ViewModels" expanded="True">
                 <Node name="Account" expanded="True" />
               </Node>
@@ -30,6 +29,7 @@
                 <Node name="Role" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>
