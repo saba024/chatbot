@@ -243,3 +243,5 @@ ClientConnectionId:a9af2c31-f3e8-49cf-b088-26a79f24e506
 Error Number:40615,State:1,Class:14
 User validation failed: DuplicateUserName;DuplicateEmail.
 User validation failed: DuplicateUserName;DuplicateEmail.
+User validation failed: DuplicateUserName;DuplicateEmail.
+User validation failed: DuplicateUserName;DuplicateEmail.
