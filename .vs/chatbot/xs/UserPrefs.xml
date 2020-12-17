@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{70A13A3E-5F1A-41AE-B909-AD43D42C1F5D}|Default">
   <MonoDevelop.Ide.ItemProperties.chatbot PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Helpers/LayoutHelper.cs">
     <Files>
       <File FileName="Helpers/RandomHelper.cs" Line="14" Column="6" />
       <File FileName="TagHelp/RoleUsersTH.cs" />
@@ -9,23 +9,30 @@
       <File FileName="ViewModels/Account/AddChatIdViewModel.cs" />
       <File FileName="Data/DBObjects.cs" />
       <File FileName="Views/Home/Index.cshtml" />
-      <File FileName="Controllers/HomeController.cs" Line="27" Column="9" />
-      <File FileName="Controllers/DashboardController.cs" />
+      <File FileName="Controllers/HomeController.cs" />
+      <File FileName="Controllers/DashboardController.cs" Line="36" Column="37" />
       <File FileName="Controllers/ChatController.cs" />
       <File FileName="Views/Menu/List.cshtml" />
       <File FileName="Startup.cs" Line="53" Column="1" />
-      <File FileName="Services/TelegramService.cs" Line="21" Column="58" />
-      <File FileName="Data/TelegramToken.cs" Line="1" Column="1" />
-      <File FileName="ServiceCollectionExtensions.cs" Line="1" Column="1" />
-      <File FileName="appsettings.json" Line="1" Column="1" />
+      <File FileName="Services/TelegramService.cs" />
+      <File FileName="Data/TelegramToken.cs" />
+      <File FileName="ServiceCollectionExtensions.cs" />
+      <File FileName="appsettings.json" />
+      <File FileName="Views/Shared/_Layout2.cshtml" Line="42" Column="54" />
+      <File FileName="Helpers/LayoutHelper.cs" Line="5" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="chatbot" expanded="True">
             <Node name="chatbot" expanded="True">
-              <Node name="Data" expanded="True" />
-              <Node name="appsettings.json" selected="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Helpers" expanded="True">
+                <Node name="LayoutHelper.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Shared" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>

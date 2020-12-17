@@ -46,7 +46,8 @@ namespace chatbot
             services.AddDatabaseDeveloperPageExceptionFilter();
 
 
-            services.AddIdentity<TelegramUser, IdentityRole>()
+            services.AddDefaultIdentity<TelegramUser>()
+               .AddRoles<IdentityRole>()
                .AddEntityFrameworkStores<PanelDbContext>();
 
 
