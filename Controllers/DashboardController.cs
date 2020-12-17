@@ -32,7 +32,7 @@ namespace chatbot.Controllers
         }
 
 
-        [Authorize(Roles = RoleNames.Administrator)]
+        
         public IActionResult Index()
         {
             DashboardViewModel dashboardViewModel = new DashboardViewModel();
@@ -44,7 +44,7 @@ namespace chatbot.Controllers
             return View(dashboardViewModel);
         }
 
-        [Authorize(Roles = RoleNames.Administrator)]
+        
         public IActionResult Chat()
         {
 

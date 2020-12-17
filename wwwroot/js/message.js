@@ -38,10 +38,10 @@ document.getElementById("sendmessage").addEventListener("click", function (event
     var message = document.getElementById("message").value;
     var groupelement = document.getElementById("group");
     var groupValue = groupelement.options[groupelement.selectedIndex].value;
-    var method = "SendMessageToAll";
+    var method = "SendMessage";
     if (groupValue == "All" || groupValue == "Myself") {
-        var method = groupValue == "All" ? "SendMessageToAll" : "SendMessageToCaller";
-        connection.invoke(method, message).catch(function (err) {
+        var method = groupValue == "All" ? "SendMessage" : "SendMessageToCaller";
+        connection.invoke(method, "Saba", message).catch(function (err) {
             return console.error(err.toString());
         });
     }

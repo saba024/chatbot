@@ -7,18 +7,10 @@ namespace chatbot.Hubs
 {
     public class MessageHub : Hub
     {
-        /* private readonly ITelegramBotClient _telegramBotClient;
-
-         MessageHub() { }
-
-         MessageHub(ITelegramBotClient telegramBotClient)
-         {
-             _telegramBotClient = telegramBotClient;
-         }*/
+       
 
         public Task SendMessageToAll(string message)
         {
-            //await _telegramBotClient.SendTextMessageAsync(,message);
             return Clients.All.SendAsync("ReceiveMessage", message);
         }
 
@@ -30,6 +22,11 @@ namespace chatbot.Hubs
         public Task SendMessageToUser(string connectionId, string message)
         {
             return Clients.Client(connectionId).SendAsync("ReceiveMessage", message);
+        }
+
+        public async Task SendMessage(string user, string message)
+        {
+            await Clients.All.SendAsync("ReceiveMessage", user, message);
         }
 
         public override async Task OnConnectedAsync()

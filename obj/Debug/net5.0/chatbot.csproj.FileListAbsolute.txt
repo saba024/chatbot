@@ -124,3 +124,4 @@
 /Users/sabanaskidashvili/Projects/chatbot/obj/Debug/net5.0/Razor/Views/Account/DeleteUser.cshtml.g.cs
 /Users/sabanaskidashvili/Projects/chatbot/obj/Debug/net5.0/Razor/Views/Account/EditUser.cshtml.g.cs
 /Users/sabanaskidashvili/Projects/chatbot/obj/Debug/net5.0/Razor/Views/Dashboard/Index.cshtml.g.cs
+/Users/sabanaskidashvili/Projects/chatbot/obj/Debug/net5.0/Razor/Views/Home/Chating.cshtml.g.cs
