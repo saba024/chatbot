@@ -50,11 +50,12 @@ namespace chatbot
                .AddRoles<IdentityRole>()
                .AddEntityFrameworkStores<PanelDbContext>();
 
-
+            
 
             services.AddControllersWithViews();
             services.AddTransient<IGetDish, DishRepository>();
             services.AddTransient<IDishCategory, CategoryRepository>();
+            services.AddTransient<IEmailMessanger, EmailMessanger>();
 
             services
                .AddScoped<ICommandService, CommandService>()
@@ -67,7 +68,15 @@ namespace chatbot
                    options.SerializerSettings.ContractResolver = new DefaultContractResolver();
                })
                .AddFluentValidation();
-            services.AddMvc();
+
+            services.AddSingleton<IEmailConfiguration>(new EmailConfiguration
+            {
+                SmtpServer = Configuration["EmailConfiguration:SmtpServer"],
+                SmtpPort = int.Parse(Configuration["EmailConfiguration:SmtpPort"]),
+                SmtpUsername = Configuration["EmailConfiguration:SmtpUsername"],
+                SmtpPassword = Configuration["EmailConfiguration:SmtpPassword"]
+            });
+
             services.AddSignalR();
             services.AddSingleton<ITelegramToken>(new TelegramToken(Configuration["Token"]));
             services.AddScoped<ITelegramService, TelegramService>();

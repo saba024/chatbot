@@ -10,8 +10,8 @@ using chatbot.Data;
 namespace chatbot.Migrations.Dish
 {
     [DbContext(typeof(DishContext))]
-    [Migration("20201211184802_TelegramUser")]
-    partial class TelegramUser
+    [Migration("20201218181022_Inital")]
+    partial class Inital
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

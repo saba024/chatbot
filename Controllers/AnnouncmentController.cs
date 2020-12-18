@@ -12,19 +12,19 @@ using Telegram.Bot.Types;
 using MailKit;
 using MailKit.Net.Smtp;
 using MimeKit;
+using chatbot.Services;
 
 namespace chatbot.Controllers
 {
     public class AnnouncmentController : Controller
     {
-       
-        
 
-        public AnnouncmentController()
+        private readonly IEmailMessanger _emailMessenger;
+
+        public AnnouncmentController(IEmailMessanger emailMessenger)
         {
-            
+            _emailMessenger = emailMessenger;
         }
-
 
 
         public IActionResult Index([FromForm] string message)
@@ -33,41 +33,29 @@ namespace chatbot.Controllers
             return View();
         }
 
-       
 
         [HttpPost("/announcment")]
         public IActionResult Post([FromForm] string body, string message)
         {
-            var msg = new MimeMessage();
+            EmailMessage msg = new EmailMessage
+            {
+                From = "chatbot Admin",
+                Subject = body,
+                Content = message
+            };
+
             List<string> recepients = new List<string>() { "naskidashvilisaba370@gmail.com" };
             if (EmailClass.recepients != null)
             {
                 recepients.Add(EmailClass.recepients);
             }
-            msg.From.Add(new MailboxAddress("Admin", "naskidashvilisaba370@gmail.com"));
+
             foreach (var rec in recepients)
             {
-                msg.To.Add(new MailboxAddress("Training academy", rec));
+                msg.ToAddresses.Add(rec);
             }
 
-            msg.Subject = body;
-            msg.Body = new TextPart("plain")
-            {
-                Text = message
-
-            };
-
-           
-
-            using (var client = new SmtpClient())
-            {
-                client.Connect("smtp.gmail.com", 25, false);
-
-                client.Authenticate("naskidashvilisaba370@gmail.com", "madrid2016");
-
-                client.Send(msg);
-                client.Disconnect(true);
-            }
+            _emailMessenger.SendMsg(msg);
 
             return RedirectToAction("Index");
         }

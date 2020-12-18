@@ -2,7 +2,7 @@
 
 namespace chatbot.Migrations.Dish
 {
-    public partial class TelegramUser : Migration
+    public partial class Inital : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
