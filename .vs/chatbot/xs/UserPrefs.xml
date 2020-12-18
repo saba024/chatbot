@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{70A13A3E-5F1A-41AE-B909-AD43D42C1F5D}|Default">
   <MonoDevelop.Ide.ItemProperties.chatbot PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Data/PanelDbContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Shared/_LoginPartial.cshtml">
     <Files>
       <File FileName="Helpers/RandomHelper.cs" Line="14" Column="6" />
       <File FileName="TagHelp/RoleUsersTH.cs" />
@@ -8,7 +8,7 @@
       <File FileName="ViewModels/Account/EditUserViewModel.cs" />
       <File FileName="ViewModels/Account/AddChatIdViewModel.cs" />
       <File FileName="Data/DBObjects.cs" Line="22" Column="34" />
-      <File FileName="Views/Home/Index.cshtml" />
+      <File FileName="Views/Home/Index.cshtml" Line="6" Column="2" />
       <File FileName="Controllers/HomeController.cs" />
       <File FileName="Controllers/DashboardController.cs" />
       <File FileName="Controllers/ChatController.cs" />
@@ -17,8 +17,8 @@
       <File FileName="Services/TelegramService.cs" />
       <File FileName="Data/TelegramToken.cs" />
       <File FileName="ServiceCollectionExtensions.cs" />
-      <File FileName="appsettings.json" Line="3" Column="192" />
-      <File FileName="Views/Shared/_Layout2.cshtml" />
+      <File FileName="appsettings.json" Line="27" Column="62" />
+      <File FileName="Views/Shared/_Layout2.cshtml" Line="43" Column="71" />
       <File FileName="Helpers/LayoutHelper.cs" />
       <File FileName="Controllers/DishController.cs" />
       <File FileName="Views/Chat/Index.cshtml" />
@@ -33,20 +33,27 @@
       <File FileName="Data/EmailConfiguration.cs" Line="1" Column="1" />
       <File FileName="Controllers/AnnouncmentController.cs" Line="35" Column="1" />
       <File FileName="SeedData.cs" Line="1" Column="1" />
-      <File FileName="Services/EmailMessanger.cs" Line="28" Column="59" />
+      <File FileName="Services/EmailMessanger.cs" Line="25" Column="1" />
       <File FileName="Models/EmailMessage.cs" Line="14" Column="1" />
-      <File FileName="Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="Properties/launchSettings.json" Line="29" Column="1" />
       <File FileName="ErrorLog.txt" Line="1" Column="1" />
       <File FileName="Data/ChatInfoContext.cs" Line="1" Column="1" />
       <File FileName="Data/PanelDbContext.cs" Line="1" Column="1" />
+      <File FileName="Views/Shared/MenuLayout.cshtml" Line="1" Column="1" />
+      <File FileName="Views/Shared/_Layout.cshtml" Line="1" Column="1" />
+      <File FileName="Views/Shared/_LoginPartial.cshtml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="chatbot" expanded="True">
             <Node name="chatbot" expanded="True">
-              <Node name="Data" expanded="True">
-                <Node name="PanelDbContext.cs" selected="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_LoginPartial.cshtml" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
