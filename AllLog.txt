@@ -822,3 +822,55 @@ Now listening on: https://localhost:5001
 Application started. Press Ctrl+C to shut down.
 Hosting environment: Production
 Content root path: /Users/sabanaskidashvili/Projects/chatbot
+Now listening on: https://localhost:5001
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Production
+Content root path: /Users/sabanaskidashvili/Projects/chatbot
+Getting all dish
+Getting all dish
+Now listening on: https://localhost:5001
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Production
+Content root path: /Users/sabanaskidashvili/Projects/chatbot
+Getting all dish
+Getting all dish
+Now listening on: https://localhost:5001
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Production
+Content root path: /Users/sabanaskidashvili/Projects/chatbot
+Getting all dish
+Now listening on: https://localhost:5001
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Production
+Content root path: /Users/sabanaskidashvili/Projects/chatbot
+Getting all dish
+Now listening on: https://localhost:5001
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Production
+Content root path: /Users/sabanaskidashvili/Projects/chatbot
+Getting all dish
+Now listening on: https://localhost:5001
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Production
+Content root path: /Users/sabanaskidashvili/Projects/chatbot
+Getting all dish
+Now listening on: https://localhost:5001
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Production
+Content root path: /Users/sabanaskidashvili/Projects/chatbot
+Getting all dish
+Now listening on: https://localhost:5001
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Production
+Content root path: /Users/sabanaskidashvili/Projects/chatbot
+Getting all dish
+Now listening on: https://localhost:5001
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Production
+Content root path: /Users/sabanaskidashvili/Projects/chatbot
+Getting all dish
+Now listening on: https://localhost:5001
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Production
+Content root path: /Users/sabanaskidashvili/Projects/chatbot
+Getting all dish
