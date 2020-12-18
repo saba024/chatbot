@@ -1,4 +1,7 @@
-name: Build and deploy ASP.Net Core app to Azure Web App - chatbotcontrpanel
+# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
+# More GitHub Actions for Azure: https://github.com/Azure/actions
+
+name: Build and deploy ASP.Net Core app to Azure Web App - botpanel
 
 on:
   push:
@@ -26,7 +29,7 @@ jobs:
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'chatbotpanel'
+        app-name: 'botpanel'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_0d038a824d824cad8d77604a360f91b6 }}
-        package: ${{env.DOTNET_ROOT}}/myapp
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_a5ae3ffb162c4a06b53f2cb44eb854b6 }}
+        package: ${{env.DOTNET_ROOT}}/myapp 
