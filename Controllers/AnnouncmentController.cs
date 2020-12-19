@@ -44,7 +44,7 @@ namespace chatbot.Controllers
                 Content = message
             };
 
-            List<string> recepients = new List<string>() { "naskidashvilisaba370@gmail.com" };
+            List<string> recepients = new List<string>() { "naskidashvili.2001@mail.ru" };
             if (EmailClass.recepients != null)
             {
                 recepients.Add(EmailClass.recepients);
